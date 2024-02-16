@@ -1,0 +1,15 @@
+{% extends "blog/base.html" %}
+{% block content %}
+    {% for calendar in calendars %}
+    <article class="media content-section">
+
+        <div class="media-body">
+
+            <h2>{{calendar.date_event|date:"F d, Y"}} - {{ calendar.title }}</h2>
+            <small class="text-muted">{{ calendar.date_posted|date:"F d, Y" }}</small>
+            <p class="article-content">{{ calendar.content }}</p>
+        </div>
+    </article>
+    {% endfor %}
+
+{% endblock %}
