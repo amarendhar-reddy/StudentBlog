@@ -14,16 +14,16 @@
     <link rel="stylesheet" type="text/css" href="{% static 'blog/main.css' %}">
 
     {% if title %}
-    <title>UNO Blog - {{ title }}</title>
+    <title>UNT Blog - {{ title }}</title>
     {% else %}
-    <title>UNO Blog</title>
+    <title>UNT Blog</title>
     {% endif %}
 </head>
 <body>
 <header class="site-header">
     <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
         <div class="container">
-            <a class="navbar-brand mr-4" href="{% url 'blog-home' %}">UNO Blog</a>
+            <a class="navbar-brand mr-4" href="{% url 'blog-home' %}">UNT Blog</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle"
                     aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
